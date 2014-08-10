@@ -38,7 +38,7 @@ function CheckDataSearch(f)
 			var page_url= wa.match(/dir\.i/) ?  wa + dirfl : http+"dir."+im+dirfl;
 			str = page_url +str;
 			str = myReplace(str,"\\\\?\\\\&","?");
-			if (trackSuggest == 1) 	rol(str, 'Trac-AutoSuggest', pos,0,0);
+			if (trackSuggest == 1)	rol(str, 'Trac-AutoSuggest', pos,0,0);
 			rol(str, 'Trac-Search', pos,0,1);
 			window.location = str;
 			return false;
